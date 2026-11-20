@@ -1,77 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zhen's Page</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="icon" href="/favicon_io/favicon.ico" type="image/x-icon"> <!-- Default favicon -->
-    <link rel="icon" href="/favicon_io/favicon-16x16.png" sizes="16x16" type="image/png"> <!-- 16x16 -->
-    <link rel="icon" href="/favicon_io/favicon-32x32.png" sizes="32x32" type="image/png"> <!-- 32x32 -->
-    <link rel="apple-touch-icon" href="/favicon_io/apple-touch-icon.png"> <!-- For iOS -->
-    <link rel="manifest" href="/favicon_io/site.webmanifest">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zhen Lu · CS Ph.D. Student, UMass Boston</title>
+  <meta name="description" content="Zhen Lu is a Computer Science Ph.D. student at UMass Boston working on Transformers, graph neural networks, self-supervised time-series learning, and LLM agents.">
+  <meta property="og:title" content="Zhen Lu · CS Ph.D. Student, UMass Boston">
+  <meta property="og:description" content="Machine learning research: Transformers, GNNs, time-series pretraining, and LLM agents.">
+  <meta property="og:url" content="https://www.tinybaozi.com/">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://www.tinybaozi.com/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" href="/favicon_io/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon_io/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/favicon_io/apple-touch-icon.png">
+  <link rel="manifest" href="/favicon_io/site.webmanifest">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/pages/blog.html">Blog</a></li>
-                <li><a href="/pages/edcuation.html">Education</a></li>
-                <li><a href="/pages/experience.html">Experience</a></li>
-                <li><a href="/pages/contact.html">Contact</a></li>
-            </ul>
-        </nav>
-            <h1>Welcome to Zhen's Personal Page</h1>
-            <p>Sharing insights, creativity, and inspiration.</p>
+  <nav class="site-nav">
+    <div class="wrap">
+      <a class="brand" href="/">Zhen Lu</a>
+      <ul>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="/pages/blog.html">Blog</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="wrap">
+    <header class="hero">
+      <h1>Zhen Lu</h1>
+      <div class="role">Ph.D. Student in Computer Science · University of Massachusetts Boston</div>
+      <div class="intro">
+        <p>I work on machine learning for structured and sequential data: Transformers, graph neural networks, and self-supervised pretraining for time series. My first-author work at IEEE BigData 2025 infers latent orderings (pseudotime) from tabular biological data with a causal-mask Transformer.</p>
+        <p>Lately I've also been building LLM agents that call tools, check their own work, and hand the final decision back to a person.</p>
+      </div>
+      <div class="callout">Looking for an applied AI/ML internship</div>
+      <div class="links">
+        <a href="mailto:cnzhenlu@gmail.com">Email</a>
+        <a href="https://scholar.google.com/citations?user=Xb1-aUUAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+        <a href="https://github.com/TinyZhen" target="_blank" rel="noopener">GitHub</a>
+      </div>
     </header>
-    <main>
-        <section id="home">
-            <header>
-                <h1>Welcome to My Blog</h1>
-                <p>Explore my thoughts, experiences, and a collection of beautiful photos.</p>
-            </header>
-            
-    
-            <section id="gallery" class="container">
-                <h2>Photo Gallery</h2>
-                <div id="image-grid" class="image-grid"></div> <!-- Images will be dynamically loaded here -->
-                <button href="/pages/blog.html" class="view-more-btn" id="view-more-button">View More</button>
-            </section>
-        
-            
-            <section id="blog" class="container">
-                <h2>Latest Blog Posts</h2>
-                <ul id="feed-list"></ul>
-                <a href="/pages/blog.html" id="read-more-link">Read More on Blog</a>
-            </section>
-            
-        </section>
-    </main>
-    <footer>
-        <p>© 2024 Zhen's page. All rights reserved.</p>
-    </footer>
-    <div id="google_translate_element"></div>
-    <script type="text/javascript">
-        function googleTranslateElementInit() {
-          new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'en,zh-CN'}, 'google_translate_element');
-        }
-      </script>
-      <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
+    <section id="publications">
+      <h2>Publications</h2>
+      <div class="item">
+        <h3>FACT: Gated Fusion-Augmented Causal Mask Transformer for Pseudotime Analysis</h3>
+        <div class="meta"><span class="me">Zhen Lu</span>, Chengjie Zheng, Iris Shen, John Quackenbush, Viola Fanfani, Wei Ding, Ping Chen</div>
+        <div class="meta"><span class="venue">IEEE International Conference on Big Data (BigData)</span>, 2025 · <a href="https://doi.org/10.1109/BigData66926.2025.11400792" target="_blank" rel="noopener">DOI</a></div>
+      </div>
+      <div class="item">
+        <h3>Improving Generalization in Deep Neural Networks by Mitigating Memorization</h3>
+        <div class="meta">Yong Zhuang, Tianyu Kang, <span class="me">Zhen Lu</span>, Wei Ding, Ping Chen</div>
+        <div class="meta"><span class="venue">Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD)</span>, 2025 · <a href="https://doi.org/10.1007/978-981-96-8173-0_8" target="_blank" rel="noopener">DOI</a></div>
+      </div>
+    </section>
 
-      <script src="/js/index_feed_reader.js"></script>
-    
-    
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="item">
+        <h3><a href="https://github.com/TinyZhen/Travel_Agent" target="_blank" rel="noopener">Roameo: a multi-agent LLM travel planner</a></h3>
+        <div class="meta">Agentic AI Hackathon, team project · 2026</div>
+        <ul>
+          <li>Seven agents (intake, research, composer, critic, feedback, guide, orchestrator). The LLM handles language and tool choice, and budget math stays deterministic.</li>
+          <li>Bounded tool-calling loop over flight, hotel, event, attraction and weather tools, a critic-driven repair loop, and human approval before anything is exported.</li>
+          <li>Scenario-based evaluation harness: 23/23 core scenarios pass in LLM mode.</li>
+        </ul>
+        <div class="tags"><span>LLM agents</span><span>tool calling</span><span>FastAPI</span><span>React</span><span>Docker</span></div>
+      </div>
+      <div class="item">
+        <h3>Self-supervised pretraining for remaining-useful-life prediction <span class="badge">In progress</span></h3>
+        <div class="meta">First-author research · UMass Boston</div>
+        <p>Pretraining for predictive maintenance on NASA C-MAPSS that needs no failure labels: a Bradley–Terry–Luce soft ranking loss over within-engine temporal order, plus condition-aware prototype alignment. Benchmarked against 13 supervised, self-supervised and foundation-model baselines.</p>
+        <div class="tags"><span>time series</span><span>self-supervised learning</span><span>PyTorch</span></div>
+      </div>
+      <div class="item">
+        <h3>Crime hotspot forecasting</h3>
+        <div class="meta">Master's thesis · Grand Valley State University · 2024</div>
+        <p>Compared 3D CNN, LSTM, CNN–RNN and Transformer models for spatiotemporal hotspot forecasting on Portland Police Bureau call-for-service data.</p>
+        <div class="tags"><span>spatiotemporal forecasting</span><span>deep learning</span></div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Education &amp; Experience</h2>
+      <div class="timeline">
+        <div class="row"><div class="when">2024 – now</div><div class="what"><strong>Ph.D., Computer Science</strong><div>University of Massachusetts Boston</div></div></div>
+        <div class="row"><div class="when">2024</div><div class="what"><strong>M.S., Applied Computer Science</strong><div>Grand Valley State University · GPA 3.9/4.0</div></div></div>
+        <div class="row"><div class="when">2019 – 2020</div><div class="what"><strong>Field Test Engineer</strong><div>LG Electronics · Bolingbrook, IL</div></div></div>
+        <div class="row"><div class="when">2019</div><div class="what"><strong>B.S.E., Computer Engineering</strong><div>Grand Valley State University</div></div></div>
+      </div>
+    </section>
+
+    <section id="life">
+      <h2>Outside the lab</h2>
+      <p>I like road trips, camping and taking photos along the way. Some of them end up on <a href="/pages/blog.html">my travel blog</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">© <span id="year">2026</span> Zhen Lu</div>
+  </footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
 </html>
